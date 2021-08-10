@@ -29,3 +29,13 @@ const randomMessage = arr => {
 };
 
 console.log(randomMessage(messages));
+
+//Random farewell
+
+const randomFarewell = arr => {
+    for (let i = 0; i < arr.length; i++) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+};
+
+console.log(randomFarewell(farewell) + '!');
