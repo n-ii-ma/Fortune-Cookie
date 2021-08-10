@@ -19,3 +19,13 @@ const randomGreetings = arr => {
 };
 
 username ? console.log(`${randomGreetings(greetings)}, ${username}!`) : console.log(randomGreetings(greetings) + '!');
+
+//Random messages
+
+const randomMessage = arr => {
+    for (let i = 0; i < arr.length; i++) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+};
+
+console.log(randomMessage(messages));
