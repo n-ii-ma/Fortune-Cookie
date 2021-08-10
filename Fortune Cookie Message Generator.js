@@ -8,7 +8,14 @@ const farewell = ['Goodbye', 'Bye', 'Have a nice day', 'Thanks for using our ser
 
 //Username
 
-const username = '';
+const username = 'Nima';
 
 //Random greetings
 
+const randomGreetings = arr => {
+    for (let i = 0; i < arr.length; i++) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+};
+
+username ? console.log(`${randomGreetings(greetings)}, ${username}!`) : console.log(randomGreetings(greetings) + '!');
